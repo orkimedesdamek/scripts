@@ -1,0 +1,2 @@
+﻿#Script displays a list of users, consisting of their names, position and department in which the user works. The list of users is taken from the AD group
+Get-AdGroupMember -identity "<AD_group_name>" | Get-ADUser -Properties title, department | select name, title, department
